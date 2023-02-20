@@ -25,6 +25,13 @@ int main()
       cout << incorrect[i] << ' ';
     }
 
+    cout << "\nCodeword:\n";
+
+    for (int i = 0; i < answer.size(); i++)
+    {
+      cout << answer[i] << ' ';
+    }
+
     misses++;
   }
 
