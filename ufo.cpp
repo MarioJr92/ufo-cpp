@@ -18,6 +18,13 @@ int main()
   {
     display_misses(misses);
 
+    cout << "\nIncorrect Guesses:\n";
+
+    for (int i = 0; i < incorrect.size(); i++)
+    {
+      cout << incorrect[i] << ' ';
+    }
+
     misses++;
   }
 
