@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-// Define functions
+// Function Definitions
 void greet()
 {
   cout << "=============\n";

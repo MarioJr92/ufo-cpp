@@ -1,0 +1,2 @@
+// Function Declarations
+void greet();
