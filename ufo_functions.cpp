@@ -133,4 +133,16 @@ void display_misses(int misses)
     cout << "          /             \\                    \n";
     cout << "         /               \\                   \n";
   }
+
+  void end_game(string answer, string codeword)
+  {
+    if (answer == codeword)
+    {
+      cout << "Hooray! You saved the person and earned a medal of honor!\n";
+    }
+    else
+    {
+      cout << "Oh no! The UFO just flew away with another person!\n";
+    }
+  }
 }
