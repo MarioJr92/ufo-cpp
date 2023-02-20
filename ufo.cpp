@@ -11,6 +11,9 @@ int main()
 
   int misses = 0;
 
+  vector<char> incorrect;
+  bool guess = false;
+
   while (answer != codeword && misses < 7)
   {
     display_misses(misses);
