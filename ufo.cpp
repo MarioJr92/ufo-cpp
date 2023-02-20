@@ -15,4 +15,13 @@ int main()
   {
     misses++;
   }
+
+  if (answer == codeword)
+  {
+    cout << "Hooray! You saved the person and earned a medal of honor!\n";
+  }
+  else
+  {
+    cout << "Oh no! The UFO just flew away with another person!\n";
+  }
 }
