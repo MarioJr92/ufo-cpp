@@ -8,4 +8,11 @@ int main()
 
   string codeword = "codecademy";
   string answer = "__________";
+
+  int misses = 0;
+
+  while (answer != codeword && misses < 7)
+  {
+    misses++;
+  }
 }
