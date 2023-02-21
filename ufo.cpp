@@ -14,10 +14,15 @@ int main()
   vector<char> incorrect;
   bool guess = false;
 
+  char letter;
+
   while (answer != codeword && misses < 7)
   {
     display_misses(misses);
     display_status(incorrect, answer);
+
+    cout << "\n\nPlease enter your guess: ";
+    cin >> letter;
 
     misses++;
   }
