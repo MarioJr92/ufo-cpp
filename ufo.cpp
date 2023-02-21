@@ -43,6 +43,8 @@ int main()
       incorrect.push_back(letter);
       misses++;
     }
+
+    guess = false;
   }
 
   end_game(answer, codeword);
