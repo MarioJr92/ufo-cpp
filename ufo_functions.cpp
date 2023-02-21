@@ -146,3 +146,21 @@ void end_game(string answer, string codeword)
     cout << "Oh no! The UFO just flew away with another person!\n";
   }
 }
+
+void display_status(vector<char> incorrect, string answer)
+{
+
+  cout << "\nIncorrect Guesses:\n";
+
+  for (int i = 0; i < incorrect.size(); i++)
+  {
+    cout << incorrect[i] << ' ';
+  }
+
+  cout << "\nCodeword:\n";
+
+  for (int i = 0; i < answer.size(); i++)
+  {
+    cout << answer[i] << ' ';
+  }
+}

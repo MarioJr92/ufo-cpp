@@ -17,20 +17,7 @@ int main()
   while (answer != codeword && misses < 7)
   {
     display_misses(misses);
-
-    cout << "\nIncorrect Guesses:\n";
-
-    for (int i = 0; i < incorrect.size(); i++)
-    {
-      cout << incorrect[i] << ' ';
-    }
-
-    cout << "\nCodeword:\n";
-
-    for (int i = 0; i < answer.size(); i++)
-    {
-      cout << answer[i] << ' ';
-    }
+    display_status(incorrect, answer);
 
     misses++;
   }
