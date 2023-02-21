@@ -24,7 +24,25 @@ int main()
     cout << "\n\nPlease enter your guess: ";
     cin >> letter;
 
-    misses++;
+    for (int i = 0; i < codeword.length(); i++)
+    {
+      if (letter == codeword[i])
+      {
+        answer[i] = letter;
+        guess = true;
+      }
+    }
+
+    if (guess)
+    {
+      cout << "\nCorrect!\n";
+    }
+    else
+    {
+      cout << "\nIncorrect! The tractor beam pulls the person in further.\n";
+      incorrect.push_back(letter);
+      misses++;
+    }
   }
 
   end_game(answer, codeword);
